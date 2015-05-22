@@ -44,7 +44,6 @@ NSString * const NoDataString = @"無數據";
 
 @interface ApplicationDirector(){
 }
-
 @end
 
 @implementation ApplicationDirector
