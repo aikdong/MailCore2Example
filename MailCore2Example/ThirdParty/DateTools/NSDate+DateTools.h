@@ -23,7 +23,6 @@
 
 
 #import <Foundation/Foundation.h>
-#import "DTConstants.h"
 
 @interface NSDate (DateTools)
 
@@ -112,8 +111,6 @@
 -(NSInteger)monthsFrom:(NSDate *)date;
 -(NSInteger)weeksFrom:(NSDate *)date;
 -(NSInteger)daysFrom:(NSDate *)date;
--(double)hoursFrom:(NSDate *)date;
--(double)minutesFrom:(NSDate *)date;
 -(double)secondsFrom:(NSDate *)date;
 #pragma mark Time From With Calendar
 -(NSInteger)yearsFrom:(NSDate *)date calendar:(NSCalendar *)calendar;
@@ -126,32 +123,24 @@
 -(NSInteger)monthsUntil;
 -(NSInteger)weeksUntil;
 -(NSInteger)daysUntil;
--(double)hoursUntil;
--(double)minutesUntil;
 -(double)secondsUntil;
 #pragma mark Time Ago
 -(NSInteger)yearsAgo;
 -(NSInteger)monthsAgo;
 -(NSInteger)weeksAgo;
 -(NSInteger)daysAgo;
--(double)hoursAgo;
--(double)minutesAgo;
 -(double)secondsAgo;
 #pragma mark Earlier Than
 -(NSInteger)yearsEarlierThan:(NSDate *)date;
 -(NSInteger)monthsEarlierThan:(NSDate *)date;
 -(NSInteger)weeksEarlierThan:(NSDate *)date;
 -(NSInteger)daysEarlierThan:(NSDate *)date;
--(double)hoursEarlierThan:(NSDate *)date;
--(double)minutesEarlierThan:(NSDate *)date;
 -(double)secondsEarlierThan:(NSDate *)date;
 #pragma mark Later Than
 -(NSInteger)yearsLaterThan:(NSDate *)date;
 -(NSInteger)monthsLaterThan:(NSDate *)date;
 -(NSInteger)weeksLaterThan:(NSDate *)date;
 -(NSInteger)daysLaterThan:(NSDate *)date;
--(double)hoursLaterThan:(NSDate *)date;
--(double)minutesLaterThan:(NSDate *)date;
 -(double)secondsLaterThan:(NSDate *)date;
 #pragma mark Comparators
 -(BOOL)isEarlierThan:(NSDate *)date;

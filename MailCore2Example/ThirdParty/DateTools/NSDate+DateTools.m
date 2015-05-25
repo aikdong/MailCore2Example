@@ -985,29 +985,6 @@ static NSCalendar *implicitCalendar = nil;
     return [self daysFrom:date calendar:nil];
 }
 
-/**
- *  Returns an NSInteger representing the amount of time in hours between the receiver and the provided date.
- *  If the receiver is earlier than the provided date, the returned value will be negative.
- *
- *  @param date NSDate - The provided date for comparison
- *
- *  @return double - The double representation of the hours between receiver and provided date
- */
--(double)hoursFrom:(NSDate *)date{
-    return ([self timeIntervalSinceDate:date])/SECONDS_IN_HOUR;
-}
-
-/**
- *  Returns an NSInteger representing the amount of time in minutes between the receiver and the provided date.
- *  If the receiver is earlier than the provided date, the returned value will be negative.
- *
- *  @param date NSDate - The provided date for comparison
- *
- *  @return double - The double representation of the minutes between receiver and provided date
- */
--(double)minutesFrom:(NSDate *)date{
-    return ([self timeIntervalSinceDate:date])/SECONDS_IN_MINUTE;
-}
 
 /**
  *  Returns an NSInteger representing the amount of time in seconds between the receiver and the provided date.
@@ -1143,23 +1120,6 @@ static NSCalendar *implicitCalendar = nil;
     return [self daysLaterThan:[NSDate date]];
 }
 
-/**
- *  Returns the number of hours until the receiver's date. Returns 0 if the receiver is the same or earlier than now.
- *
- *  @return double representiation of hours
- */
--(double)hoursUntil{
-    return [self hoursLaterThan:[NSDate date]];
-}
-
-/**
- *  Returns the number of minutes until the receiver's date. Returns 0 if the receiver is the same or earlier than now.
- *
- *  @return double representiation of minutes
- */
--(double)minutesUntil{
-    return [self minutesLaterThan:[NSDate date]];
-}
 
 /**
  *  Returns the number of seconds until the receiver's date. Returns 0 if the receiver is the same or earlier than now.
@@ -1207,23 +1167,6 @@ static NSCalendar *implicitCalendar = nil;
     return [self daysEarlierThan:[NSDate date]];
 }
 
-/**
- *  Returns the number of hours the receiver's date is earlier than now. Returns 0 if the receiver is the same or later than now.
- *
- *  @return double representiation of hours
- */
--(double)hoursAgo{
-    return [self hoursEarlierThan:[NSDate date]];
-}
-
-/**
- *  Returns the number of minutes the receiver's date is earlier than now. Returns 0 if the receiver is the same or later than now.
- *
- *  @return double representiation of minutes
- */
--(double)minutesAgo{
-    return [self minutesEarlierThan:[NSDate date]];
-}
 
 /**
  *  Returns the number of seconds the receiver's date is earlier than now. Returns 0 if the receiver is the same or later than now.
@@ -1281,30 +1224,6 @@ static NSCalendar *implicitCalendar = nil;
  */
 -(NSInteger)daysEarlierThan:(NSDate *)date{
     return ABS(MIN([self daysFrom:date], 0));
-}
-
-/**
- *  Returns the number of hours the receiver's date is earlier than the provided comparison date.
- *  Returns 0 if the receiver's date is later than or equal to the provided comparison date.
- *
- *  @param date NSDate - Provided date for comparison
- *
- *  @return double representing the number of hours
- */
--(double)hoursEarlierThan:(NSDate *)date{
-    return ABS(MIN([self hoursFrom:date], 0));
-}
-
-/**
- *  Returns the number of minutes the receiver's date is earlier than the provided comparison date.
- *  Returns 0 if the receiver's date is later than or equal to the provided comparison date.
- *
- *  @param date NSDate - Provided date for comparison
- *
- *  @return double representing the number of minutes
- */
--(double)minutesEarlierThan:(NSDate *)date{
-    return ABS(MIN([self minutesFrom:date], 0));
 }
 
 /**
@@ -1368,29 +1287,6 @@ static NSCalendar *implicitCalendar = nil;
     return MAX([self daysFrom:date], 0);
 }
 
-/**
- *  Returns the number of hours the receiver's date is later than the provided comparison date.
- *  Returns 0 if the receiver's date is earlier than or equal to the provided comparison date.
- *
- *  @param date NSDate - Provided date for comparison
- *
- *  @return double representing the number of hours
- */
--(double)hoursLaterThan:(NSDate *)date{
-    return MAX([self hoursFrom:date], 0);
-}
-
-/**
- *  Returns the number of minutes the receiver's date is later than the provided comparison date.
- *  Returns 0 if the receiver's date is earlier than or equal to the provided comparison date.
- *
- *  @param date NSDate - Provided date for comparison
- *
- *  @return double representing the number of minutes
- */
--(double)minutesLaterThan:(NSDate *)date{
-    return MAX([self minutesFrom:date], 0);
-}
 
 /**
  *  Returns the number of seconds the receiver's date is later than the provided comparison date.

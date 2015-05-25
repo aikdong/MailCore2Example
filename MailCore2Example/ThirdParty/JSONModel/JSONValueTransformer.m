@@ -16,7 +16,6 @@
 
 #import "JSONValueTransformer.h"
 #import "JSONModelArray.h"
-#import "DotNetDateFormatter.h"
 
 
 #pragma mark - functions
@@ -235,20 +234,6 @@ static NSDateFormatter *_dateFormatter;
         [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HHmmssZZZZ"];
     });
     return dateFormatter;
-}
-
-- (NSDate*)NSDateFromNSString:(NSString*)string
-{
-    DotNetDateFormatter *dnDateFormatter = [DotNetDateFormatter dotNetDateFormatter];
-    
-    return [dnDateFormatter dateFromString:string];
-}
-
-- (NSString*)JSONObjectFromNSDate:(NSDate*)date
-{
-    DotNetDateFormatter *dnDateFormatter = [DotNetDateFormatter dotNetDateFormatter];
-    
-    return [dnDateFormatter stringFromDate:date];
 }
 
 -(NSDate*)__NSDateFromNSString:(NSString*)string

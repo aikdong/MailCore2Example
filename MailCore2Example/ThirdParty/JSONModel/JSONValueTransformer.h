@@ -212,18 +212,6 @@ extern BOOL isNull(id value);
  */
 - (NSString *)JSONObjectFromNSTimeZone:(NSTimeZone *)timeZone;
 
-#pragma mark - string <-> date
-/** @name Transforming Dates */
-/**
- * The following two methods are not public. This way if there is a category on converting 
- * dates it'll override them. If there isn't a category the default methods found in the .m
- * file will be invoked. If these are public a warning is produced at the point of overriding
- * them in a category, so they have to stay hidden here.
- */
-
--(NSDate*)NSDateFromNSString:(NSString*)string;
--(NSString*)JSONObjectFromNSDate:(NSDate*)date;
-
 #pragma mark - number <-> date
 
 /**

@@ -10,7 +10,6 @@
 #import "XJAlertManager.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import <AdSupport/AdSupport.h>
-#import "DotNetDateFormatter.h"
 #import "NSDate+DateTools.h"
 #import "HUD.h"
 #import "NSData+CommonCrypto.h"
