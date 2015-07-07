@@ -299,11 +299,6 @@ delayedAttachments:(NSArray *)delayedAttachments
     
     NSArray *emails = [MCOAddress addressesWithNonEncodedRFC822String:emailstring];
     return emails;
-    //Need to remove empty emails with trailing ,
-//    NSArray *emails = [emailstring componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@","]];
-//    NSPredicate *notBlank = [NSPredicate predicateWithFormat:@"length > 0 AND SELF != ' '"];
-    
-//    return [emails filteredArrayUsingPredicate:notBlank];
 }
 
 - (void)sendEmailto:(NSArray*)to
