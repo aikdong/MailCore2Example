@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2651A56F1BC79F2E00FCCEF8 /* EmailAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2651A56E1BC79F2E00FCCEF8 /* EmailAccountViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2651A5721BC79F5000FCCEF8 /* BaseFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2651A5711BC79F5000FCCEF8 /* BaseFormViewController.m */; settings = {ASSET_TAGS = (); }; };
 		BA558CB6D92A77E8BECD5DE7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A008CD66146BF66CDEC0FEDC /* libPods.a */; };
 		E784BF341B12B8DE00AE866D /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = E784BF221B12B8DE00AE866D /* JSONAPI.m */; };
 		E784BF351B12B8DE00AE866D /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E784BF241B12B8DE00AE866D /* JSONHTTPClient.m */; };
@@ -23,7 +25,6 @@
 		E7D51EA91B0EC0BB0057EDB3 /* Mail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D51EA71B0EC0BB0057EDB3 /* Mail.storyboard */; };
 		E7D51F1D1B0EC1560057EDB3 /* AddAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D51EAC1B0EC1550057EDB3 /* AddAddressViewController.m */; };
 		E7D51F1E1B0EC1560057EDB3 /* AttachmentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D51EAE1B0EC1550057EDB3 /* AttachmentListViewController.m */; };
-		E7D51F1F1B0EC1560057EDB3 /* EmailAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D51EB01B0EC1550057EDB3 /* EmailAccountViewController.m */; };
 		E7D51F201B0EC1560057EDB3 /* DelayedAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D51EB31B0EC1550057EDB3 /* DelayedAttachment.m */; };
 		E7D51F211B0EC1560057EDB3 /* FPMimetype.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D51EB61B0EC1550057EDB3 /* FPMimetype.m */; };
 		E7D51F221B0EC1560057EDB3 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = E7D51EB81B0EC1550057EDB3 /* folder.png */; };
@@ -140,6 +141,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2651A56D1BC79F2E00FCCEF8 /* EmailAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailAccountViewController.h; sourceTree = "<group>"; };
+		2651A56E1BC79F2E00FCCEF8 /* EmailAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailAccountViewController.m; sourceTree = "<group>"; };
+		2651A5701BC79F5000FCCEF8 /* BaseFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFormViewController.h; sourceTree = "<group>"; };
+		2651A5711BC79F5000FCCEF8 /* BaseFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFormViewController.m; sourceTree = "<group>"; };
 		A008CD66146BF66CDEC0FEDC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D9DE899E35834E1F002B75 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D181B4BA448FE174C0691E7B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,8 +178,6 @@
 		E7D51EAC1B0EC1550057EDB3 /* AddAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAddressViewController.m; sourceTree = "<group>"; };
 		E7D51EAD1B0EC1550057EDB3 /* AttachmentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentListViewController.h; sourceTree = "<group>"; };
 		E7D51EAE1B0EC1550057EDB3 /* AttachmentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachmentListViewController.m; sourceTree = "<group>"; };
-		E7D51EAF1B0EC1550057EDB3 /* EmailAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailAccountViewController.h; sourceTree = "<group>"; };
-		E7D51EB01B0EC1550057EDB3 /* EmailAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailAccountViewController.m; sourceTree = "<group>"; };
 		E7D51EB21B0EC1550057EDB3 /* DelayedAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelayedAttachment.h; sourceTree = "<group>"; };
 		E7D51EB31B0EC1550057EDB3 /* DelayedAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelayedAttachment.m; sourceTree = "<group>"; };
 		E7D51EB51B0EC1550057EDB3 /* FPMimetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMimetype.h; sourceTree = "<group>"; };
@@ -432,14 +435,16 @@
 		E7D51EAA1B0EC1550057EDB3 /* Mail */ = {
 			isa = PBXGroup;
 			children = (
+				2651A5701BC79F5000FCCEF8 /* BaseFormViewController.h */,
+				2651A5711BC79F5000FCCEF8 /* BaseFormViewController.m */,
+				2651A56D1BC79F2E00FCCEF8 /* EmailAccountViewController.h */,
+				2651A56E1BC79F2E00FCCEF8 /* EmailAccountViewController.m */,
 				E7D520E71B0EC2200057EDB3 /* MailInfo */,
 				E7D51EB11B0EC1550057EDB3 /* Helpers */,
 				E7D51EAB1B0EC1550057EDB3 /* AddAddressViewController.h */,
 				E7D51EAC1B0EC1550057EDB3 /* AddAddressViewController.m */,
 				E7D51EAD1B0EC1550057EDB3 /* AttachmentListViewController.h */,
 				E7D51EAE1B0EC1550057EDB3 /* AttachmentListViewController.m */,
-				E7D51EAF1B0EC1550057EDB3 /* EmailAccountViewController.h */,
-				E7D51EB01B0EC1550057EDB3 /* EmailAccountViewController.m */,
 				E7D51F071B0EC1560057EDB3 /* MailFolderViewController.h */,
 				E7D51F081B0EC1560057EDB3 /* MailFolderViewController.m */,
 				E7D51F091B0EC1560057EDB3 /* MailListViewController.h */,
@@ -841,7 +846,6 @@
 				E7D51F6E1B0EC1560057EDB3 /* MailMainViewController.m in Sources */,
 				E7D5208B1B0EC1F10057EDB3 /* GKImageCropView.m in Sources */,
 				E784BF371B12B8DE00AE866D /* JSONModel+networking.m in Sources */,
-				E7D51F1F1B0EC1560057EDB3 /* EmailAccountViewController.m in Sources */,
 				E7D51F6B1B0EC1560057EDB3 /* UTIFunctions.m in Sources */,
 				E7D51F211B0EC1560057EDB3 /* FPMimetype.m in Sources */,
 				E784BF391B12B8DE00AE866D /* JSONModelArray.m in Sources */,
@@ -850,6 +854,7 @@
 				E7D520881B0EC1F10057EDB3 /* EVURLCache.m in Sources */,
 				E784BF3C1B12B8DE00AE866D /* JSONValueTransformer.m in Sources */,
 				E7D5208E1B0EC1F10057EDB3 /* GKResizeableCropOverlayView.m in Sources */,
+				2651A5721BC79F5000FCCEF8 /* BaseFormViewController.m in Sources */,
 				E7D51F681B0EC1560057EDB3 /* MCOAbstractMessage+TBMail.m in Sources */,
 				E7D51F201B0EC1560057EDB3 /* DelayedAttachment.m in Sources */,
 				E7D520911B0EC1F10057EDB3 /* HUD.m in Sources */,
@@ -870,6 +875,7 @@
 				E7D51F6A1B0EC1560057EDB3 /* MCOPOPMessage.m in Sources */,
 				E7D51F1D1B0EC1560057EDB3 /* AddAddressViewController.m in Sources */,
 				E7D520C21B0EC1F10057EDB3 /* UIImageView+Click.m in Sources */,
+				2651A56F1BC79F2E00FCCEF8 /* EmailAccountViewController.m in Sources */,
 				E7D5207E1B0EC1F10057EDB3 /* NSString+TBHelper.m in Sources */,
 				E7D5208D1B0EC1F10057EDB3 /* GKImagePicker.m in Sources */,
 				E784BF3B1B12B8DE00AE866D /* JSONModelError.m in Sources */,
@@ -993,6 +999,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MailCore2Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1007,6 +1014,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MailCore2Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 CEC. All rights reserved.
 //
 
+#import "BaseFormViewController.h"
 #import "MailInfo.h"
-#import "StaticDataTableViewController.h"
 
-@interface EmailAccountViewController : StaticDataTableViewController
+@interface EmailAccountViewController : BaseFormViewController
 
 @end
